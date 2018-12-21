@@ -93,6 +93,12 @@
         gpgcheck: yes
         gpgkey: $dockerurl/gpg
 
+    - name: Enable firewall
+      systemd:
+        name: firewalld
+        enabled: yes
+        state: started
+
     - name: Install Docker
       yum:
         name: '{{ docker_ee_version | default("docker-ee") }}'

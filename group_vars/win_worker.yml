@@ -26,3 +26,6 @@ disks_specs:
     type: thin
     datastore: "{{ datastores | random }}"
 
+disk2: 'placeholder'
+disk2_part: 'placeholder'
+

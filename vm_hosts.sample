@@ -32,7 +32,7 @@ node_policy='hpe-gold'
 
 ## WORKER
 [worker]
-hpe-worker01 ip_addr='10.60.59.21/16' esxi_host='esxi-hpe-1.cloudra.local'
+hpe-worker01 ip_addr='10.60.59.21/16' tags=baremetal disk2=/dev/sda disk2_part=/dev/sda1
 hpe-worker02 ip_addr='10.60.59.22/16' esxi_host='esxi-hpe-2.cloudra.local'
 hpe-worker03 ip_addr='10.60.59.23/16' esxi_host='esxi-hpe-3.cloudra.local' orchestrator=swarm
 

@@ -15,3 +15,6 @@ disks_specs:
   - size_gb: '{{ disk2_size }}'
     type: thin
     datastore: "{{ datastores | random }}"
+
+disk2: '/dev/sdb' 
+disk2_part: '/dev/sdb1'
